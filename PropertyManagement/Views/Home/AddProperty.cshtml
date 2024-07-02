@@ -1,0 +1,63 @@
+﻿@model PropertyManagement.ViewModels.PropertyViewModel;
+
+<div class="container mt-3">
+    <h2>New Property</h2>
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <div>
+            @ViewBag.ErrorMessage
+        </div>
+    }
+    <form method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="NewProperty">
+        <div class="mb-3">
+            <label asp-for="PropertyCode" class="form-label">Property Code:</label>
+            <input class="form-control" asp-for="PropertyCode">
+            <span asp-validation-for="PropertyCode" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="PropertyName" class="form-label">Property Name:</label>
+            <input class="form-control" asp-for="PropertyName">
+            <span asp-validation-for="PropertyName" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Supplier" class="form-label">Supplier:</label>
+            <input class="form-control" asp-for="Supplier">
+            <span asp-validation-for="Supplier" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <div class="form-group">
+                <label asp-for="Image" class="control-label">Choose Profile Image:</label>
+                <div class="custom-file">
+                    <input asp-for="Image" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+                <span asp-validation-for="Image" class="text-danger"></span>
+            </div>
+            <img id="preview-image" src="#" alt="Preview Image" class="form-image">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a href="@Url.Action("Property", "Home")" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        const fileInput = document.getElementById('customFile');
+        const previewImage = document.getElementById('preview-image');
+
+        fileInput.addEventListener('change', event => {
+            if (event.target.files.length > 0) {
+                const file = event.target.files[0];
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    previewImage.src = e.target.result;
+                    previewImage.style.display = 'block';
+                }
+
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+}

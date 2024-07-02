@@ -1,0 +1,76 @@
+﻿
+@model PropertyManagement.ViewModels.PaginatedViewModel;
+
+
+<div class="container">
+    <div class="mt-5">
+        @if (Model.PageSize != null && Model.PageSize > 0)
+        {
+            @foreach (var prop in Model.Items)
+            {
+                <div class="d-style btn btn-brc-tp border-2 bgc-white btn-outline-blue btn-h-outline-blue btn-a-outline-blue w-100 my-2 py-3 shadow-sm">
+                    <!-- Hiển thị thông tin thuộc tính -->
+                    <form asp-controller="Home" asp-action="CreateQRCode" method="post">
+                        <div class="row align-items-center">
+
+                            <div class="col-12 col-md-4">
+                                <h4 class="pt-3 text-170 text-600 text-primary-d1 letter-spacing">
+                                    @prop.PropertyCode
+                                </h4>
+
+                                <h4 class="pt-3 text-170 text-600 text-primary-d1 letter-spacing">
+                                    @prop.PropertyName
+                                </h4>
+
+                                <div class="text-secondary-d1 text-120">
+                                    @prop.Supplier
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-4" style="height: 200px; display: flex; justify-content: center; align-items: center; overflow: hidden;">
+                              <img src="~/images/@prop.Image" class="img-fluid" style="max-width: 100%; max-height: 100%; object-fit: cover;" alt="Image description">
+                            </div>
+
+
+
+                            <input type="hidden" name="PropertyCode" value="@prop.PropertyCode" />
+                            <input type="hidden" name="PropertyName" value="@prop.PropertyName" />
+                            <input type="hidden" name="Supplier" value="@prop.Supplier" />
+                            <input type="hidden" name="Image" value="@prop.Image" />
+
+                            <div class="col-12 col-md-4 text-center">
+                                <!-- Form để tạo QR Code -->
+                                <!-- Truyền ID của thuộc tính để tạo QR Code -->
+                                @* <input type="hidden" name="id" value="@prop.Id" /> *@
+                                <button type="submit" class="f-n-hover btn btn-info btn-raised px-4 py-25 w-75 text-600">QR Code</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="alert alert-info mt-4">Không có dữ liệu thuộc tính để hiển thị.</div>
+        }
+    </div>
+
+    @{
+        var totalPag = Model.TotalItems / Model.PageSize;
+        if (Model.TotalItems % Model.PageSize != 0)
+        {
+            totalPag += 1;
+        }
+    }
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li id="pre" class="page-item"><a class="page-link" href="#">Previous</a></li>
+            @for (var pag = 1; pag <= totalPag; pag++)
+            {
+                <li @* onclick="loadDataTable(@pag,2)" *@ class="page-item indexPage"><a class="page-link" href="#">@pag</a></li>
+            }
+            <li id="next" class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+    </nav>
+
+</div>

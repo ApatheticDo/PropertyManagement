@@ -1,0 +1,92 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@model List<PropertyManagement.Models.Property>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property List</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS styles */
+        /* Add your custom CSS styles here */
+    </style>
+</head>
+<body>
+    <div class="container">
+        @if (HttpContextAccessor.HttpContext.Session.GetString("admin") != null)
+        {
+            <div class="mt-4">
+                <a href="@Url.Action("AddProperty", "Home")" class="btn btn-success">New Property</a>
+            </div>
+        }
+        <div class="text-right mt-3">
+            <form id="searchForm" method="get" asp-controller="Home" asp-action="Property">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="searchText" id="searchText" placeholder="Search...">
+                    <div class="input-group-append">
+                        <button id="searchButton" class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <div id="dataListContainer">
+            <!-- Data will be loaded dynamically here -->
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+           
+
+                loadData();
+            
+        });
+
+        function loadData(pageIndex, pageSize) {
+            var formData = '';
+            formData = $('#searchForm').serialize();
+            previousSearchText = $('#searchText').val();
+            if (previousSearchText != null) {
+                formData = 'searchText=' + encodeURIComponent(previousSearchText);              
+            }
+            formData += '&pageIndex=' + pageIndex + '&pageSize=' + pageSize;
+
+            $.ajax({
+                url: '@Url.Action("Property", "Home")',
+                type: 'GET',
+                data: formData,
+                success: function (data) {
+                    $('#dataListContainer').html(data);
+                },
+                error: function (xhr, status, error) {
+                    console.error(xhr.responseText);
+                }
+            });
+        }
+
+        $(document).on('click', '.indexPage', function () {
+            // alert('A')
+            var indexPage = parseInt($(this).text().trim());
+            loadData(indexPage);
+        });
+
+        $('#searchForm').submit(function (event) {
+            event.preventDefault(); // Prevent form submission
+            loadData();
+        });
+
+
+    </script>
+
+</body>
+</html>
