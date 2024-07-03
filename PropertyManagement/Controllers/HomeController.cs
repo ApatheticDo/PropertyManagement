@@ -56,6 +56,11 @@ namespace PropertyManagement.Controllers
             return View("Property");
         }
 
+        public IActionResult Inventory() 
+        {
+            return View("Inventory");
+        }
+
         public IActionResult Property(string? searchText, int? pageIndex, int? pageSize)
         {
             try
@@ -162,7 +167,7 @@ namespace PropertyManagement.Controllers
 
         public IActionResult NewProperty(PropertyViewModel model)
         {
-            
+
             int? crBy = HttpContext.Session.GetInt32("id");
 
             if (ModelState.IsValid)
@@ -199,11 +204,27 @@ namespace PropertyManagement.Controllers
 
                 }
             }
-            else 
+            else
             {
                 ViewBag.Message = "Invalid information !";
             }
-            return RedirectToAction("Property", "Home");
+            return RedirectToAction("PropertyManage", "Home");
+        }
+
+        public IActionResult EditProperty(int id)
+        { 
+            var find = _context.Properties.Find(id);
+            
+
+
+            var model = new PropertyViewModel();
+            model.PropertyCode = find.PropertyCode;
+            model.PropertyName = find.PropertyName;
+            model.Supplier = find.Supplier;
+            model.Image = find.Image;
+
+            return View("EditProperty", model);
+        
         }
 
         private string UpLoadedFile(PropertyViewModel model)
@@ -219,11 +240,11 @@ namespace PropertyManagement.Controllers
                     Directory.CreateDirectory(uploadsFolder);
                 }
 
-                uniqueFileName = Guid.NewGuid().ToString() + "_" + model.Image.FileName;
+                uniqueFileName = Guid.NewGuid().ToString() + "_" + model.PropertyPicture.FileName;
                 string filePath = Path.Combine(uploadsFolder, uniqueFileName);
                 using (var fileStream = new FileStream(filePath, FileMode.Create))
                 {
-                    model.Image.CopyTo(fileStream);
+                    model.PropertyPicture.CopyTo(fileStream);
                 }
             }
             return uniqueFileName;

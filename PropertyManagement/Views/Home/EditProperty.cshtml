@@ -1,7 +1,8 @@
 ﻿@model PropertyManagement.ViewModels.PropertyViewModel;
 
+
 <div class="container mt-3">
-    <h2>New Property</h2>
+    <h2>Update Property</h2>
     @if (ViewBag.ErrorMessage != null)
     {
         <div>
@@ -26,12 +27,12 @@
         </div>
         <div class="mb-3">
             <div class="form-group">
-                <label asp-for="PropertyPicture" class="control-label">Choose Profile Image:</label>
+                <label asp-for="Image" class="control-label">Choose Profile Image:</label>
                 <div class="custom-file">
-                    <input asp-for="PropertyPicture" class="custom-file-input" id="customFile">
+                    <input asp-for="Image" class="custom-file-input" id="customFile">
                     <label class="custom-file-label" for="customFile">Choose file</label>
                 </div>
-                <span asp-validation-for="PropertyPicture" class="text-danger"></span>
+                <span asp-validation-for="Image" class="text-danger"></span>
             </div>
             <img id="preview-image" src="#" alt="Preview Image" class="form-image">
         </div>
@@ -61,3 +62,4 @@
         });
     </script>
 }
+

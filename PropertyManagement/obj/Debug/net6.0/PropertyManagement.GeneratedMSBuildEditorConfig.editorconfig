@@ -26,8 +26,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXRhTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/PropertyManagement/PropertyManage/PropertyManagement/PropertyManagement/Views/Home/EditProperty.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0UHJvcGVydHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/PropertyManagement/PropertyManage/PropertyManagement/PropertyManagement/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PropertyManagement/PropertyManage/PropertyManagement/PropertyManagement/Views/Home/Inventory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbnZlbnRvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/PropertyManagement/PropertyManage/PropertyManagement/PropertyManagement/Views/Home/Login.cshtml]

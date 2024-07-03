@@ -42,7 +42,11 @@
                                 <!-- Form để tạo QR Code -->
                                 <!-- Truyền ID của thuộc tính để tạo QR Code -->
                                 @* <input type="hidden" name="id" value="@prop.Id" /> *@
-                                <button type="submit" class="f-n-hover btn btn-info btn-raised px-4 py-25 w-75 text-600">QR Code</button>
+                                <button type="submit" class="f-n-hover btn btn-primary btn-raised px-4 py-25 w-50 text-600">QR Code</button>
+                                <a href="@Url.Action("EditProperty", "Home", new { id = prop.PropertyID })" class="f-n-hover btn btn-success btn-raised px-4 py-2 w-60 text-600">Edit</a>
+                                <a href="@Url.Action("DeleteProperty", "Home")" class="f-n-hover btn btn-danger btn-raised px-4 py-2 w-60 text-600">Delete</a>
+
+
                             </div>
                         </div>
                     </form>
