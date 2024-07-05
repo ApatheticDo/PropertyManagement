@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AWK5LvT27CI=",
+  "dgSpecHash": "Hndoe6NnH4k=",
   "success": true,
-  "projectFilePath": "D:\\PropertyManagement\\PropertyManage\\PropertyManagement\\PropertyManagement\\PropertyManagement.csproj",
+  "projectFilePath": "D:\\PropertyWeb\\PropertyManagement\\PropertyManagement\\PropertyManagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DMVNS00005\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\DMVNS00005\\.nuget\\packages\\azure.identity\\1.11.3\\azure.identity.1.11.3.nupkg.sha512",

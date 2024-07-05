@@ -9,71 +9,71 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PropertyManagement
 build_property.RootNamespace = PropertyManagement
-build_property.ProjectDir = D:\PropertyManagement\PropertyManage\PropertyManagement\PropertyManagement\
+build_property.ProjectDir = D:\PropertyWeb\PropertyManagement\PropertyManagement\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\PropertyManagement\PropertyManage\PropertyManagement\PropertyManagement
+build_property.MSBuildProjectDirectory = D:\PropertyWeb\PropertyManagement\PropertyManagement
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/PropertyManagement/PropertyManage/PropertyManagement/PropertyManagement/Views/Home/AddProperty.cshtml]
+[D:/PropertyWeb/PropertyManagement/PropertyManagement/Views/Home/AddProperty.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGRQcm9wZXJ0eS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PropertyManagement/PropertyManage/PropertyManagement/PropertyManagement/Views/Home/DataList.cshtml]
+[D:/PropertyWeb/PropertyManagement/PropertyManagement/Views/Home/DataList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXRhTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PropertyManagement/PropertyManage/PropertyManagement/PropertyManagement/Views/Home/EditProperty.cshtml]
+[D:/PropertyWeb/PropertyManagement/PropertyManagement/Views/Home/EditProperty.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0UHJvcGVydHkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PropertyManagement/PropertyManage/PropertyManagement/PropertyManagement/Views/Home/Index.cshtml]
+[D:/PropertyWeb/PropertyManagement/PropertyManagement/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PropertyManagement/PropertyManage/PropertyManagement/PropertyManagement/Views/Home/Inventory.cshtml]
+[D:/PropertyWeb/PropertyManagement/PropertyManagement/Views/Home/Inventory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbnZlbnRvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PropertyManagement/PropertyManage/PropertyManagement/PropertyManagement/Views/Home/Login.cshtml]
+[D:/PropertyWeb/PropertyManagement/PropertyManagement/Views/Home/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PropertyManagement/PropertyManage/PropertyManagement/PropertyManagement/Views/Home/Privacy.cshtml]
+[D:/PropertyWeb/PropertyManagement/PropertyManagement/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PropertyManagement/PropertyManage/PropertyManagement/PropertyManagement/Views/Home/Property.cshtml]
+[D:/PropertyWeb/PropertyManagement/PropertyManagement/Views/Home/Property.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9wZXJ0eS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PropertyManagement/PropertyManage/PropertyManagement/PropertyManagement/Views/Home/Register.cshtml]
+[D:/PropertyWeb/PropertyManagement/PropertyManagement/Views/Home/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PropertyManagement/PropertyManage/PropertyManagement/PropertyManagement/Views/Home/Staff.cshtml]
+[D:/PropertyWeb/PropertyManagement/PropertyManagement/Views/Home/Staff.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdGFmZi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PropertyManagement/PropertyManage/PropertyManagement/PropertyManagement/Views/Shared/Error.cshtml]
+[D:/PropertyWeb/PropertyManagement/PropertyManagement/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PropertyManagement/PropertyManage/PropertyManagement/PropertyManagement/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/PropertyWeb/PropertyManagement/PropertyManagement/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PropertyManagement/PropertyManage/PropertyManagement/PropertyManagement/Views/_ViewImports.cshtml]
+[D:/PropertyWeb/PropertyManagement/PropertyManagement/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PropertyManagement/PropertyManage/PropertyManagement/PropertyManagement/Views/_ViewStart.cshtml]
+[D:/PropertyWeb/PropertyManagement/PropertyManagement/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/PropertyManagement/PropertyManage/PropertyManagement/PropertyManagement/Views/Shared/_Layout.cshtml]
+[D:/PropertyWeb/PropertyManagement/PropertyManagement/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-0ibf145lqe

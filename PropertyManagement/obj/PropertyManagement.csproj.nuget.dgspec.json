@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PropertyManagement\\PropertyManage\\PropertyManagement\\PropertyManagement\\PropertyManagement.csproj": {}
+    "D:\\PropertyWeb\\PropertyManagement\\PropertyManagement\\PropertyManagement.csproj": {}
   },
   "projects": {
-    "D:\\PropertyManagement\\PropertyManage\\PropertyManagement\\PropertyManagement\\PropertyManagement.csproj": {
+    "D:\\PropertyWeb\\PropertyManagement\\PropertyManagement\\PropertyManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PropertyManagement\\PropertyManage\\PropertyManagement\\PropertyManagement\\PropertyManagement.csproj",
+        "projectUniqueName": "D:\\PropertyWeb\\PropertyManagement\\PropertyManagement\\PropertyManagement.csproj",
         "projectName": "PropertyManagement",
-        "projectPath": "D:\\PropertyManagement\\PropertyManage\\PropertyManagement\\PropertyManagement\\PropertyManagement.csproj",
+        "projectPath": "D:\\PropertyWeb\\PropertyManagement\\PropertyManagement\\PropertyManagement.csproj",
         "packagesPath": "C:\\Users\\DMVNS00005\\.nuget\\packages\\",
-        "outputPath": "D:\\PropertyManagement\\PropertyManage\\PropertyManagement\\PropertyManagement\\obj\\",
+        "outputPath": "D:\\PropertyWeb\\PropertyManagement\\PropertyManagement\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
